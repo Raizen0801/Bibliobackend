@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+logging:
+  level:
+    root: WARN
+    pe.edu.upeu.BiblioBackend: INFO
+    org.hibernate.SQL: WARN
+app:
+  cors:
+    allowed-origins: ${FRONTEND_ORIGINS}
